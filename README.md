@@ -152,33 +152,26 @@ chmod +x cuda_8.0.61_375.26_linux.run
 sudo ./cuda_8.0.61_375.26_linux.run
 ```
 
------------------------------------------
 Do you accept the previously read EULA?
 accept/decline/quit: accept
-
 Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 375.26?
 (y)es/(n)o/(q)uit: n
-
 Install the CUDA 8.0 Toolkit?
 (y)es/(n)o/(q)uit: y
-
 Enter Toolkit Location
- [ default is /usr/local/cuda-8.0 ]:           
-
+default is /usr/local/cuda-8.0: enter
 Do you want to install a symbolic link at /usr/local/cuda?
 (y)es/(n)o/(q)uit: y
-
 Install the CUDA 8.0 Samples?
 (y)es/(n)o/(q)uit: b
 Install the CUDA 8.0 Samples?
 (y)es/(n)o/(q)uit: n
 
 Installing the CUDA Toolkit in /usr/local/cuda-8.0 ...
-
 Driver:   Not Selected
 Toolkit:  Installed in /usr/local/cuda-8.0
 Samples:  Not Selected
------------------------------------------
+
 
 After the installation finishes, configure runtime library. 
 ```
