@@ -152,6 +152,7 @@ chmod +x cuda_8.0.61_375.26_linux.run
 sudo ./cuda_8.0.61_375.26_linux.run
 ```
 
+-----------------------------------------
 Do you accept the previously read EULA?
 accept/decline/quit: accept
 
@@ -174,13 +175,10 @@ Install the CUDA 8.0 Samples?
 
 Installing the CUDA Toolkit in /usr/local/cuda-8.0 ...
 
-===========
-= Summary =
-===========
-
 Driver:   Not Selected
 Toolkit:  Installed in /usr/local/cuda-8.0
 Samples:  Not Selected
+-----------------------------------------
 
 After the installation finishes, configure runtime library. 
 ```
