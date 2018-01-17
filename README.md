@@ -83,19 +83,31 @@ Note: It is also possible for the NVIDIA installation runfile to creat this blac
 
 Then, 
 
-1. for Ubuntu 14.04 LTS, reboot the computer;
-2. for Ubuntu 16.04 LTS, excute 
+1. for Ubuntu 14.04 LTS, 
+```
+sudo reboot
+```
+2. for Ubuntu 16.04 LTS,  
 ```
 sudo update-initramfs -u
 sudo reboot
 ``` 
-3. for CentOS/Fedora, excute `sudo dracut --force` and reboot the computer. 
+3. for CentOS/Fedora, 
+```
+sudo dracut --force
+sudo reboot
+```
+ 
 
 ### Stop lightdm/gdm/kdm
 
 After the computer is rebooted. We need to stop the desktop manager before excuting the runfile to install the driver. `lightdm` is the default desktop manager in Ubuntu. If GNOME or KDE desktop environment is used, installed desktop manager will then be `gdm` or `kdm`.
 
-1. For Ubuntu 14.04 / 16.04, excuting `sudo service lightdm stop` (or use `gdm` or `kdm` instead of `lightdm`)
+1. For Ubuntu 14.04 / 16.04, excuting 
+```
+sudo service lightdm stop
+``` 
+(or use `gdm` or `kdm` instead of `lightdm`)
 2. For Ubuntu 16.04 / Fedora / CentOS, excuting 
 ```
 sudo systemctl stop lightdm
