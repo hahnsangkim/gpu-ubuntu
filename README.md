@@ -61,7 +61,11 @@ For Ubuntu, installing the following dependencies is enough.
 3. `dkms` -- For providing dkms support
 4. (Optional) `xorg` and `xorg-dev`. On a workstation with GUI, this is require but usually have already been installed, because you have already got the graphic display. On headless servers without GUI, this is not a must. 
 
-As a summary, excuting `sudo apt-get install build-essential gcc-multilib dkms` to install all dependencies. 
+As a summary, excuting 
+```
+sudo apt-get install build-essential gcc-multilib dkms
+``` 
+to install all dependencies. 
 
 Required packages for CentOS are `epel-release dkms libstdc++.i686`. Execute `yum install epel-release dkms libstdc++.i686`. 
 
@@ -80,7 +84,11 @@ Note: It is also possible for the NVIDIA installation runfile to creat this blac
 Then, 
 
 1. for Ubuntu 14.04 LTS, reboot the computer;
-2. for Ubuntu 16.04 LTS, excute `sudo update-initramfs -u` and reboot the computer;
+2. for Ubuntu 16.04 LTS, excute 
+```
+sudo update-initramfs -u
+sudo reboot
+``` 
 3. for CentOS/Fedora, excute `sudo dracut --force` and reboot the computer. 
 
 ### Stop lightdm/gdm/kdm
@@ -88,7 +96,11 @@ Then,
 After the computer is rebooted. We need to stop the desktop manager before excuting the runfile to install the driver. `lightdm` is the default desktop manager in Ubuntu. If GNOME or KDE desktop environment is used, installed desktop manager will then be `gdm` or `kdm`.
 
 1. For Ubuntu 14.04 / 16.04, excuting `sudo service lightdm stop` (or use `gdm` or `kdm` instead of `lightdm`)
-2. For Ubuntu 16.04 / Fedora / CentOS, excuting `sudo systemctl stop lightdm` (or use `gdm` or `kdm` instead of `lightdm`)
+2. For Ubuntu 16.04 / Fedora / CentOS, excuting 
+```
+sudo systemctl stop lightdm
+``` 
+(or use `gdm` or `kdm` instead of `lightdm`)
 
 ### Excuting the Runfile
 
@@ -106,9 +118,10 @@ Note:
 2. option `-s` is used for silent installation which should used for batch installation. For installation on a single computer, this option should be turned off for more installtion information. 
 3. option `--no-opengl-files` can also be added if non-NVIDIA (AMD or Intel) graphics are used for display while NVIDIA graphics are used for display. 
 4. The installer may prompt warning on a system without X.Org installed. It is safe to ignore that based on my experience. 
-```
+
+
 WARNING: nvidia-installer was forced to guess the X library path '/usr/lib' and X module path '/usr/lib/xorg/modules'; these paths were not queryable from the system.  If X fails to find the NVIDIA X driver module, please install the `pkg-config` utility and the X.Org SDK/development package for your distribution and reinstall the driver.
-```
+
 
 ### Check the Installation
 
