@@ -197,9 +197,10 @@ At last, execute `sudo ldconfig` to update the shared library cache.
 
 Download [cuDNN](https://developer.nvidia.com/cudnn) linux libraries.
 Uncompress tar
+
+```
 tar -xvf cudnn-8.0-linux-x64-v7.tgz
-Copy files to cuda library
+cd cuda
 sudo cp include/cudnn.h /usr/local/cuda/include/
 sudo cp lib64/libcudnn* /usr/local/cuda-7.5/lib64/
-Run ldconfig from /lib64 to update libs cache
-sudo ldconfig /usr/local/cuda/lib64
+```
