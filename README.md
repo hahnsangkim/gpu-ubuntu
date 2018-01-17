@@ -150,7 +150,6 @@ cd ~
 wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
 sudo ./cuda_8.0.61_375.26_linux.run
-```
 
 Do you accept the previously read EULA?
 accept/decline/quit: accept
@@ -171,7 +170,7 @@ Installing the CUDA Toolkit in /usr/local/cuda-8.0 ...
 Driver:   Not Selected
 Toolkit:  Installed in /usr/local/cuda-8.0
 Samples:  Not Selected
-
+```
 
 After the installation finishes, configure runtime library. 
 ```
