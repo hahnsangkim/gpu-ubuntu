@@ -1,5 +1,5 @@
-# gpu-ubuntu
-guide to the installation of NVIDIA driver, cuda, cudnn
+# NVIDIA Driver + CUDA + CUDNN on Ubuntu
+Guide to the installation of NVIDIA driver, cuda, cudnn
 
 ## Install NVIDIA Graphics Driver via apt-get
 
