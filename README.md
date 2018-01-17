@@ -202,5 +202,5 @@ Uncompress tar
 tar -xvf cudnn-8.0-linux-x64-v7.tgz
 cd cuda
 sudo cp include/cudnn.h /usr/local/cuda/include/
-sudo cp lib64/libcudnn* /usr/local/cuda-7.5/lib64/
+sudo cp lib64/libcudnn* /usr/local/cuda-8.0/lib64/
 ```
