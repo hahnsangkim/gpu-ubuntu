@@ -149,7 +149,7 @@ Scripts for installing CUDA Toolkit are summarized below.
 cd ~
 wget http://developer.download.nvidia.com/compute/cuda/7.5/Prod/local_installers/cuda_8.0.61_375.26_linux.run
 chmod +x cuda_8.0.61_375.26_linux.run
-sudo ./cuda_8.0.61_375.26_linux.run.run
+sudo ./cuda_8.0.61_375.26_linux.run
 ```
 
 After the installation finishes, configure runtime library. 
